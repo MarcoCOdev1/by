@@ -1,0 +1,36 @@
+{"level":30,"time":1792869034565,"pid":11036,"hostname":"flawless","port":3000,"msg":"HTTP server started"}
+{"level":30,"time":1792869061429,"pid":11036,"hostname":"flawless","kind":"download","detail":{"file":"FPS-Unlocker.exe","userId":null},"msg":"event"}
+{"level":30,"time":1792869161958,"pid":6172,"hostname":"flawless","port":3000,"msg":"HTTP server started"}
+{"level":30,"time":1792869163356,"pid":6172,"hostname":"flawless","botId":"1563628460788940830","msg":"Discord bot connected"}
+{"level":30,"time":1792869171741,"pid":11064,"hostname":"flawless","port":3100,"msg":"HTTP server started"}
+{"level":30,"time":1792869173057,"pid":11064,"hostname":"flawless","botId":"1563628460788940830","msg":"Discord bot connected"}
+{"level":30,"time":1792869352676,"pid":11640,"hostname":"flawless","port":3000,"msg":"HTTP server started"}
+{"level":30,"time":1792869353866,"pid":11640,"hostname":"flawless","botId":"1563628460788940830","msg":"Discord bot connected"}
+{"level":30,"time":1792869382320,"pid":11064,"hostname":"flawless","kind":"report_created","detail":{"reportId":1,"userId":null},"msg":"event"}
+{"level":30,"time":1792869383824,"pid":11064,"hostname":"flawless","kind":"report_webhook","detail":{"reportId":1},"msg":"event"}
+{"level":30,"time":1792869924440,"pid":9476,"hostname":"flawless","port":3100,"msg":"HTTP server started"}
+{"level":30,"time":1792869926207,"pid":9476,"hostname":"flawless","botId":"1563628460788940830","msg":"Discord bot connected"}
+{"level":30,"time":1792870610713,"pid":6076,"hostname":"flawless","port":3000,"msg":"HTTP server started"}
+{"level":30,"time":1792870613637,"pid":6076,"hostname":"flawless","botId":"1563628460788940830","msg":"Discord bot connected"}
+{"level":30,"time":1792871536614,"pid":9344,"hostname":"flawless","port":3000,"msg":"HTTP server started"}
+{"level":50,"time":1792871537355,"pid":9344,"hostname":"flawless","message":"ENOENT: no such file or directory, stat 'C:\\Users\\marco\\Desktop\\f\\dist\\client\\index.html'","path":"/","msg":"Request failed"}
+{"level":30,"time":1792871537850,"pid":9344,"hostname":"flawless","botId":"1563628460788940830","msg":"Discord bot connected"}
+{"level":50,"time":1792871540985,"pid":9344,"hostname":"flawless","message":"ENOENT: no such file or directory, stat 'C:\\Users\\marco\\Desktop\\f\\dist\\client\\index.html'","path":"/","msg":"Request failed"}
+{"level":30,"time":1792872367057,"pid":7608,"hostname":"flawless","port":3101,"msg":"HTTP server started"}
+{"level":30,"time":1792872369810,"pid":7608,"hostname":"flawless","botId":"1563628460788940830","msg":"Discord bot connected"}
+{"level":30,"time":1792872713901,"pid":152,"hostname":"flawless","port":3000,"msg":"HTTP server started"}
+{"level":30,"time":1792872716511,"pid":152,"hostname":"flawless","botId":"1563628460788940830","msg":"Discord bot connected"}
+{"level":30,"time":1792875932649,"pid":1052,"hostname":"flawless","port":3000,"msg":"HTTP server started"}
+{"level":30,"time":1792875936133,"pid":1052,"hostname":"flawless","botId":"1563628460788940830","msg":"Discord bot connected"}
+{"level":30,"time":1792877009644,"pid":1304,"hostname":"flawless","port":3000,"msg":"HTTP server started"}
+{"level":30,"time":1792877013557,"pid":1304,"hostname":"flawless","botId":"1563628460788940830","msg":"Discord bot connected"}
+{"level":30,"time":1792877194042,"pid":8348,"hostname":"flawless","port":3000,"msg":"HTTP server started"}
+{"level":30,"time":1792877196943,"pid":8348,"hostname":"flawless","botId":"1563628460788940830","msg":"Discord bot connected"}
+{"level":30,"time":1792877213201,"pid":8348,"hostname":"flawless","kind":"download","detail":{"file":"tuto.md","userId":null},"msg":"event"}
+{"level":30,"time":1792877304351,"pid":11812,"hostname":"flawless","port":3000,"msg":"HTTP server started"}
+{"level":30,"time":1792877305935,"pid":11812,"hostname":"flawless","botId":"1563628460788940830","msg":"Discord bot connected"}
+{"level":30,"time":1792877936306,"pid":7756,"hostname":"flawless","port":3000,"msg":"HTTP server started"}
+{"level":30,"time":1792877937576,"pid":7756,"hostname":"flawless","botId":"1563628460788940830","msg":"Discord bot connected"}
+{"level":30,"time":1792878095257,"pid":7756,"hostname":"flawless","kind":"member_added","detail":{"userId":"1263541037251432480"},"msg":"event"}
+{"level":30,"time":1792878698773,"pid":2476,"hostname":"flawless","port":3000,"msg":"HTTP server started"}
+{"level":30,"time":1792878702666,"pid":2476,"hostname":"flawless","botId":"1563628460788940830","msg":"Discord bot connected"}

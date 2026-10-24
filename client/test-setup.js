@@ -1,0 +1,11 @@
+import '@testing-library/jest-dom/vitest';
+import { afterEach, vi } from 'vitest';
+import { cleanup } from '@testing-library/react';
+afterEach(() => { cleanup(); vi.restoreAllMocks(); vi.useRealTimers(); localStorage.clear(); });
+Object.defineProperty(window, 'matchMedia', { writable: true, value: vi.fn(() => ({ matches: false, addEventListener() {}, removeEventListener() {} })) });
+window.scrollTo = vi.fn();
+window.HTMLElement.prototype.scrollIntoView = vi.fn();
+globalThis.ResizeObserver = class { observe() {} disconnect() {} };
+globalThis.IntersectionObserver = class { observe() {} disconnect() {} unobserve() {} };
+HTMLDialogElement.prototype.showModal = function () { this.open = true; };
+HTMLDialogElement.prototype.close = function () { this.open = false; this.dispatchEvent(new Event('close')); };

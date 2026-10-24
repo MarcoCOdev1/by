@@ -1,0 +1,27 @@
+services:
+  app:
+    build: .
+    init: true
+    restart: unless-stopped
+    env_file: .env
+    environment:
+      PORT: "3000"
+      DATA_DIR: /app/data
+      LOG_DIR: /app/logs
+    # Only the host's Nginx can reach the application directly.
+    ports:
+      - "127.0.0.1:3000:3000"
+    volumes:
+      - ./data:/app/data
+      - ./logs:/app/logs
+    security_opt:
+      - no-new-privileges:true
+    cap_drop:
+      - ALL
+    mem_limit: 512m
+    stop_grace_period: 15s
+    logging:
+      driver: json-file
+      options:
+        max-size: "10m"
+        max-file: "3"

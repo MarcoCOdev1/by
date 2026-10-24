@@ -1,0 +1,64 @@
+{
+  "name": "bypasser",
+  "version": "1.0.0",
+  "description": "Manual guides and an opt-in Discord community",
+  "main": "src/index.js",
+  "engines": {
+    "node": "^20.19.0 || >=22.12.0"
+  },
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node src/index.js --dev",
+    "build": "vite build",
+    "preview:discord": "node scripts/preview.mjs --discord",
+    "test": "npm run build && npm run test:backend && npm run test:client",
+    "test:backend": "node --test --test-concurrency=1 tests/*.test.js",
+    "test:client": "vitest run",
+    "test:browser": "npm run build && playwright test",
+    "deploy:commands": "node src/bot/deploy-commands.mjs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "type": "module",
+  "dependencies": {
+    "better-sqlite3": "~12.11.1",
+    "compression": "^1.8.2",
+    "connect-sqlite3": "^0.9.18",
+    "cookie-parser": "^1.4.7",
+    "discord.js": "^14.27.0",
+    "dotenv": "^18.0.9",
+    "express": "^4.21.2",
+    "express-rate-limit": "^8.7.1",
+    "express-session": "^1.19.0",
+    "helmet": "^8.3.0",
+    "pino": "^10.4.0",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "react-router-dom": "^7.18.4",
+    "sqlite3": "^6.0.1"
+  },
+  "overrides": {
+    "connect-sqlite3": {
+      "sqlite3": "$sqlite3"
+    }
+  },
+  "allowScripts": {
+    "better-sqlite3": true,
+    "sqlite3": true,
+    "esbuild": true
+  },
+  "devDependencies": {
+    "@napi-rs/canvas": "^1.0.13",
+    "@playwright/test": "^1.64.1",
+    "@tailwindcss/vite": "^4.3.3",
+    "@testing-library/jest-dom": "^7.0.1",
+    "@testing-library/react": "^16.3.3",
+    "@testing-library/user-event": "^14.6.8",
+    "@vitejs/plugin-react": "^5.2.0",
+    "jsdom": "^26.1.0",
+    "tailwindcss": "^4.3.3",
+    "vite": "^7.3.7",
+    "vitest": "^4.1.12"
+  }
+}
