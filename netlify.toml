@@ -1,0 +1,16 @@
+[build]
+  # Install devDependencies (Vite and its plugins) explicitly, even when
+  # NODE_ENV=production or an existing node_modules was installed without them.
+  command = "npm install --include=dev --no-audit --no-fund && npm run build"
+  publish = "dist/client"
+
+[build.environment]
+  # The site's NODE_ENV=production setting makes npm skip devDependencies,
+  # which is where Vite and its plugins live. Always install them for the build.
+  NPM_FLAGS = "--include=dev"
+
+# Single-page app fallback for client-side routes (/dashboard, /admin, ...)
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
